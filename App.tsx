@@ -46,10 +46,16 @@ const Parachute = () => {
   );
 };
 
-const ButtonMenu = ({ buttons, state, setState }) => {
-  const [activeButton, setActiveButton] = useState(null);
+type ButtonMenuProps = {
+  buttons: { id: string; label: string }[];
+  state: string;
+  setState: (id: string) => void;
+};
 
-  const handleClick = (buttonId) => {
+const ButtonMenu: React.FC<ButtonMenuProps> = ({ buttons, state, setState }) => {
+  const [activeButton, setActiveButton] = useState<string | null>(null);
+
+  const handleClick = (buttonId: string) => {
     setActiveButton(buttonId);
     setState(buttonId);
   };
