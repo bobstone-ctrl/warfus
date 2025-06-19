@@ -1,0 +1,481 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.button-menu {
+  position: fixed;
+  top: 0;
+  padding-top: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-Index : 2;
+}
+
+.menu-button {
+  font-family: "Wolfenstein";
+  font-size: calc(10px + 4vmin);
+  padding: 1vh 2vw;
+  box-shadow: 0vw 0.5vh 1vw rgba(0, 0, 0, 0.5);
+  border: 0.2vw outset black;
+  background-color: rgb(201, 0, 0);
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.menu-button:hover {
+  color: black;
+}
+
+.banner {
+  width: 30vw;
+  border-radius: 2vw;
+}
+
+.top-cloud {
+  width: auto;
+  height: 65vh;
+  margin-left: 10vw;
+}
+
+.mid-cloud {
+  width: 75vw;
+  height: auto;
+  margin-left: -50vw;
+}
+
+.bot-cloud {
+  width: 75vw;
+  height: auto;
+  margin-left: 30vw;
+}
+
+.plane {
+  width: 30vw;
+  height: auto;
+  margin-left: 50vw;
+}
+
+.parachute {
+  width: 40vw;
+  height: auto;
+  margin-top: 30vh;
+  margin-left: -50vw;
+}
+
+.top-ground {
+  width: 100vw;
+  height: auto;
+}
+
+.mid-ground {
+  width: 100vw;
+  height: auto;
+}
+
+.bot-ground {
+  width: 100vw;
+  height: auto;
+}
+
+.tank {
+  width: 40vw;
+  height: auto;
+  margin-left: 30vw;
+}
+
+.dialogue {
+  width: 40vw;
+  border-radius: 3vw;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: none; 
+  padding: 10px;
+  font-family: "Kinkee";
+  color: rgb(223, 35, 66);
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
+  margin-left: 10vw;
+  margin-top: 30vh;
+  padding: 3vh 2vw;
+  font-size: 2vw;
+}
+
+.dialogue2 {
+  width: 40vw;
+  border-radius: 3vw;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: none; 
+  padding: 10px;
+  font-family: "Kinkee";
+  color: rgb(223, 35, 66);
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
+  margin-left: 50vw;
+  margin-top: 30vh;
+  padding: 3vh 2vw;
+  font-size: 2vw;
+}
+
+.dancing_gif {
+  position: fixed;
+  top: 0;
+  width: 30vw;
+  height: auto;
+  z-Index: 1;
+}
+
+.roadmap {
+  width: auto;
+  height: 40vh;
+  border: double 0.5vw black;
+}
+
+.contact_buttons {
+  border: none;
+  background-color: #A9A9A9;
+  margin: none;
+  padding: 2vw;
+}
+
+.contact_logos {
+  width : auto;
+  height: 25vh;
+  background-color:  rgb(201, 0, 0);
+  padding: 5vh;
+  border: 0.5vh outset black;
+  box-shadow: 0vw 0.5vh 1vw rgba(0, 0, 0, 0.5);
+}
+
+.contact_logos:hover {
+  background-color: rgb(163, 0, 0);
+  transition: background-color 0.2s ease;
+}
+
+.portrait1 {
+  width: 320px;
+  height: auto;
+  position: absolute;
+  left: -230px;
+  top: -270px;
+}
+
+.portrait2 {
+  width: 400px;
+  height: auto;
+  position: absolute;
+  left: 80px;
+  top: -480px;
+}
+
+.portrait3 {
+  width: 380px;
+  height: auto;
+  position: absolute;
+  left: 480px;
+  top: -320px;
+}
+
+.portrait4 {
+  width: 550px;
+  height: auto;
+  position: absolute;
+  left: -250px;
+  top: -20px;
+}
+
+.portrait5 {
+  width: 800px;
+  height: auto;
+  position: absolute;
+  left: -1000px;
+  top: 140px;
+}
+
+.portrait6-container {
+  position: absolute;
+  left: -740px;
+  top: -470px;
+  transition: transform 0.2s ease;
+}
+
+.portrait6-container:hover {
+  transform: scale(1.2);
+}
+
+.portrait6 {
+  width: 500px;
+  height: auto;
+}
+
+.portrait-text-container {
+  position: absolute;
+  top: -5%;
+  left: 26%;
+  width: 50%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kinkee";
+  color: rgb(0, 0, 0);
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+  font-size: 26px;
+}
+
+.portrait7-container {
+  position: absolute;
+  left: 300px;
+  top: 80px;
+  transition: transform 0.2s ease;
+}
+
+.portrait7 {
+  width: 500px;
+  height: auto;
+}
+
+.portrait7-container:hover {
+  transform: scale(1.2);
+}
+
+.assistant {
+  position: fixed;
+  bottom: 0;
+  left: 15vw;
+  width: auto;
+  height: 60vh;
+  z-Index: 2;
+}
+
+.screen-container {
+  position: fixed;
+  display: flex;
+  left: 30vw;
+  bottom: -5vh;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url('./images/screen.webp'); /* Replace 'your-image-url.jpg' with your actual image URL */
+  background-size: cover;
+  width: 40vw;
+  height: 90vh;
+  padding: 0 20px; /* Add some padding */
+}
+
+.roadmapButton{
+  font-family: "Kinkee";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 22%;
+  color: rgb(0, 0, 0);
+  -webkit-text-stroke: 2px rgb(255, 255, 255);
+  font-size: 48px;
+  padding: 1vh 1vw;
+  background-color: rgb(201, 0, 0);;
+}
+
+.screen-text {
+  position: absolute;
+  top: -20%;
+  left: 15%;
+  width: 70%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kinkee";
+  color: rgb(223, 35, 66);
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
+  font-size: 48px;
+}
+
+.footer {
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: 9999;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 5vh;
+  background-color: rgba(201, 0, 0, 0.548);
+  color: white;
+  font-family: "Wolfenstein";
+  font-size: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0vw 0.5vh 1vw rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 600px) {
+  .banner {
+    width: 70vw;
+    border-radius: 2vw;
+  }
+  .top-cloud {
+    height: 50vh;
+    margin-top: -10vh;
+    margin-left: -150vw;
+  }
+  .mid-cloud {
+    width: auto;
+    height: 55vh;
+    margin-top: -10vh;
+    margin-left: -100vw;
+  }
+  .bot-cloud {
+    width: auto;
+    height: 45vh;
+    margin-top: -5vh;
+    margin-left: -70vw;
+  }
+  .plane {
+    width: auto;
+    height: 25vh;
+    margin-top: -30vh;
+    margin-left: -10vw;
+  }
+  .parachute {
+    width: 100vw;
+    margin-top: 15vh;
+    margin-left: 0vw;
+  }
+  .top-ground {
+    width: auto;
+    height: 140vh;
+    margin-left: -80vw;
+    margin-top: -10vh;
+  }
+  .mid-ground {
+    width: auto;
+    height: 100vh;
+    margin-left: -40vw;
+  }
+  .bot-ground {
+    width: auto;
+    height: 120vh;
+    margin-left: -200vw;
+    margin-top: -20vh;
+  }
+  .tank {
+    width: 120vw;
+    height: auto;
+    margin-left: 10vw;
+    margin-top: 15vh;
+  }
+  .dialogue {
+    width: 80vw;
+    font-size: 2.5vh;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+  }
+  .dialogue2 {
+    width: 80vw;
+    font-size: 2.5vh;
+    margin-left: 10vw;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+  }
+  .contact_logos {
+    height: 12vh;
+    background-color: rgb(201, 0, 0);
+    padding: 3vh;
+    margin: 2vh 2vw ;
+    border: 0.5vh outset black;
+    box-shadow: 0vw 0.5vh 1vw rgba(0, 0, 0, 0.5);
+  }
+  .portrait1 {
+    opacity: 0;
+    width: 0vw;
+    left: 0vw;
+    top: 0h;
+  }
+  .portrait2 {
+    width: 50vw;
+    left: -58vw;
+    top: 5vh;
+  }
+  .portrait3 {
+    width: 35vw;
+    left: 12vw;
+    top: -12vh;
+  }
+  .portrait4 {
+    opacity: 0;
+    width: 0vw;
+    left: 0vw;
+    top: 0h;
+  }
+  .portrait5 {
+    width: 50vw;
+    left: 5vw;
+    top: -30vh;
+  }
+  .portrait6-container {
+    left: -60vw;
+    top: -30vh;  
+  }
+  .portrait6 {
+    width: 65vw;
+  }
+  .portrait7-container {
+    left: -10vw;
+    top: 5vh;  
+  }
+  .portrait7 {
+    width: 65vw;
+  }
+  .portrait-text-container {
+    font-size: 16px;
+  }
+  .assistant {
+    left: -15vw;
+    height: 50vh;
+  }
+  .screen-container {
+    left: 0vw;
+    bottom: 10vh;
+    width: 90vw;
+    height: 80vh;
+    padding: 0 20px; /* Add some padding */
+  }
+  .roadmapButton{
+    padding: 0.5vh 3vw;
+    background-color: rgb(201, 0, 0);;
+  }
+  .screen-text {
+    top: -20%;
+    left: 15%;
+    width: 70%;
+    font-size: 36px;
+  }
+}
+
