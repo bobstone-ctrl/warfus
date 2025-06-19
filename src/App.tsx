@@ -152,18 +152,18 @@ function App() {
         return <Parallax ref={ref} pages={4} style={{zIndex : 1}}>
           {/* Clouds */}
           <ParallaxLayer offset={0.1} speed={0.1} >
-            <img src={cloudT} className='top-cloud' />
+            <img src={cloudT} className='top-cloud' alt='Cloud Top' />
           </ParallaxLayer>
           <ParallaxLayer offset={0.5} speed={0.3}>
-            <img src={cloudM} className='mid-cloud' />
+            <img src={cloudM} className='mid-cloud' alt='Cloud Middle' />
           </ParallaxLayer>
           <ParallaxLayer offset={0.9} speed={0.5}>
-            <img src={cloudB} className='bot-cloud' />
+            <img src={cloudB} className='bot-cloud' alt='Cloud Bottom' />
           </ParallaxLayer>
 
           <ParallaxLayer offset={0} speed={1} >
             <div className='dialogue' >
-              <img src={banner} className='banner'/>
+              <img src={banner} className='banner' alt='Banner' />
               <animated.p style={ {...dialogBoxStyle}}>
               { `Konnichiwa! (≧ω≦) ✨✨
                 You look super strong 💪 and smart 🧠,just what we need! (≧ヮ≦) 💕`
@@ -176,7 +176,7 @@ function App() {
 
           {/* Plane */}
           <ParallaxLayer offset={0.99} speed={0.7} >
-            <img src={plane} className='plane' />
+            <img src={plane} className='plane' alt='Plane' />
           </ParallaxLayer>
 
           {/* Parachute */}
@@ -201,13 +201,13 @@ function App() {
 
           {/* Ground */}
           <ParallaxLayer offset={2.5} speed={0.1} >
-            <img src={groundT} className='top-ground' />
+            <img src={groundT} className='top-ground' alt='Ground Top' />
           </ParallaxLayer>
           <ParallaxLayer offset={2.9} speed={0.3}>
-            <img src={groundM} className='mid-ground' />
+            <img src={groundM} className='mid-ground' alt='Ground Middle' />
           </ParallaxLayer>
           <ParallaxLayer offset={3} speed={0.8}>
-            <img src={groundB} className='bot-ground' />
+            <img src={groundB} className='bot-ground' alt='Ground Bottom' />
           </ParallaxLayer>
 
           <ParallaxLayer offset={3} speed={1} >
@@ -228,26 +228,26 @@ function App() {
 
           {/* Tank */}
           <ParallaxLayer offset={3.5} speed={0.8} >
-            <img src={tank} className='tank' />
+            <img src={tank} className='tank' alt='Tank'/>
           </ParallaxLayer>
 
           </Parallax>;
         break;
       case 'roadmap':
         return <div>
-          <img src={assistant} className='assistant'/>
+          <img src={assistant} className='assistant' alt='Assistant'/>
           <StepSelector />
         </div>;
         break;
       case 'tokenomics':
         return <div style={{position : "relative", marginBottom: "10vh"}}>
-          <img src={portrait1} className='portrait1'/>
-          <img src={portrait2} className='portrait2'/>
-          <img src={portrait3} className='portrait3'/>
-          <img src={portrait4} className='portrait4'/> 
-          <img src={portrait5} className='portrait5'/>
+          <img src={portrait1} className='portrait1' alt='Portrait 1'/>
+          <img src={portrait2} className='portrait2' alt='Portrait 2'/>
+          <img src={portrait3} className='portrait3' alt='Portrait 3'/>
+          <img src={portrait4} className='portrait4' alt='Portrait 4'/>
+          <img src={portrait5} className='portrait5' alt='Portrait 5'/>
           <div className='portrait6-container'>
-            <img src={portrait6} className='portrait6' />
+            <img src={portrait6} className='portrait6' alt='Portrait 6' />
             <button
               className='portrait-text-container'
               onClick={() => {
@@ -265,7 +265,7 @@ function App() {
 
           </ div>
           <div className='portrait7-container'>
-            <img src={portrait7} className='portrait7' />
+            <img src={portrait7} className='portrait7' alt='Portrait 7' />
             <p className='portrait-text-container'>
               { ` 1,000,000,000 $WARFUS
               
@@ -281,13 +281,13 @@ function App() {
       case 'contact':
         return <div /* style={{marginTop : "-25vh"}} */>
           <button className='contact_buttons' onClick={() => window.open('https://x.com/warfusonline', '_blank', 'noopener,noreferrer')}>
-            <img src={x} className='contact_logos'/>
+            <img src={x} className='contact_logos' alt='X logo'/>
           </button>
           <button className='contact_buttons' onClick={() => window.open('https://dexscreener.com', '_blank', 'noopener,noreferrer')}>
-            <img src={dexscrenner} className='contact_logos'/>
+            <img src={dexscrenner} className='contact_logos' alt='Dexscreener logo'/>
           </button>
           <button className='contact_buttons' onClick={() => window.open('https://solscan.io', '_blank', 'noopener,noreferrer')}>
-            <img src={solscan} className='contact_logos'/>
+            <img src={solscan} className='contact_logos' alt='Solscan logo'/>
           </button>
         </div>;
         break;
